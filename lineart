@@ -1,0 +1,48 @@
+    public void paint(Graphics g) {
+        super.paintComponent(g);
+        
+        
+        // Draw Grid
+        //create 4 boundary points
+        //+= and -= the coordinates of a line to get multiple lines
+        g.drawRect(0, 0, 999, 649);
+        
+        int Q1x1 = 0;
+        int Q1y1 = 200;
+        int Q1x2 = 50;
+        int Q1y2 = 649;
+        
+        g.drawLine(Q1x1, Q1y1, Q1x2, Q1y2);
+        for(int count = 0; count < 18; count++) {
+        	g.drawLine(Q1x1, Q1y1 += 25, Q1x2 += 25, Q1y2);
+        }
+        
+        int Q2x1 = 0;
+        int Q2y1 = 50;
+        int Q2x2 = 0;
+        int Q2y2 = 450;
+        
+        g.drawLine(Q2x1, Q2y1, Q2x2, Q2y2);
+        for(int count = 0; count < 18; count++) {
+        	g.drawLine(Q2x1, Q2y1 += 25, Q2x2, Q2y2 -= 25);
+        }
+        
+        int Q3x1 = 0;
+        int Q3y1 = 50;
+        int Q3x2 = 0;
+        int Q3y2 = 450;
+        
+        g.drawLine(Q3x1, Q3y1, Q3x2, Q3y2);
+        for(int count = 0; count < 18; count++) {
+        	g.drawLine(Q3x1, Q3y1 += 25, Q3x2, Q3y2 -= 25);
+        }
+        
+        int Q4x1 = 0;
+        int Q4y1 = 50;
+        int Q4x2 = 0;
+        int Q4y2 = 450;
+        
+        g.drawLine(Q4x1, Q4y1, Q4x2, Q4y2);
+        for(int count = 0; count < 18; count++) {
+        	g.drawLine(Q4x1, Q4y1 += 25, Q4x2, Q4y2 -= 25);
+        }
